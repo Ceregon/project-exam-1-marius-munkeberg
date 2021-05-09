@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fill in this form to contact us">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <title>SpaceXam - Contact</title>
+</head>
+<body>
+  <header>
+    <p class="logo">SpaceXam</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rockets.html">Rockets</a>
+      <a href="launches.html">Launches</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact us</h1>
+    <p>If you have any questions, please fill in the form below.</p>
+    <div class="form-container">
+      <form>
+        <label>Name<input type="text" id="name" placeholder="Your name..."/></label>
+      <div id="nameError" class="error">Your name is required</div>
+      <label>Email<input type="text" id="email" placeholder="Your email..."/></email></label>
+      <div id="emailError" class="error">Your email is required and must be formatted like this: example@mail.com</div>
+      <label>Subject<input type="text" id="subject" placeholder="Subject..."/></label>
+      <div id="subjectError" class="error">A subject is required</div>
+      <label>Your question<textarea id="question" placeholder="Your question..."></textarea></label>
+      <div id="questionError" class="error">Question is required and must be at least 25 characters long</div>
+      <p class="submitted">The form has been submitted!</p>
+      <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <script src="js/scriptForm.js"></script>
+</body>
+</html>
